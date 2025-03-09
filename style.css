@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: beige;
+    
+
+}
+header>a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+
+}
+#student-form{
+    margin: 20px auto;
+    width: 100%;
+    height: 80vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    
+}
+#student-form>form{
+   
+  
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    padding: 20px auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: coral;
+    border: 1px solid black;
+    gap: 20px;
+   
+}
+form>p{
+    font-size:x-large;
+
+}
+label{
+    font-size:large;
+   
+}
+form>#inputField{
+    display: flex;
+    gap: 10px;
+}
+input,select{
+    padding: 10px 20px;
+}
+
+#submit{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+
+}
+
+
+
+
+#tableData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+table{
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+table>tbody>tr>td{
+    padding: 10px 20px;
+}
+table>thead>tr>td{
+    padding: 10px 20px;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+#searchBtn{
+    padding: 10px 20px;
+    
+    background-color: black;
+    color: white;
+}
+
+
+@media only screen and (max-width:600px) {
+    #stuent-form{
+        width:100%;
+        height: 80vh;
+
+    }
+    form{
+        width: 100%;
+        height: 80vh;
+        flex-direction: column;
+        gap: 5px;
+    }
+    #inputField{
+        flex-direction: column;
+        gap: 5px;
+    }
+    input,select{
+        padding: 5px 5px;
+    }
+    form>p,h1{
+        font-size:medium;
+    
+    }
+    label{
+        font-size:small;
+       
+    }
+    
+}
+
