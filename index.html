@@ -1,107 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Student Profile Dashboard">
+    <title>Student Profile Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-         <a href="#">Home</a>
-         <a href="#">Profile</a>
-         <a href="#">Setting</a>
-         <div id="search">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div id="search">
             <input type="search" placeholder="search by name" id="searchName">
             <button id="searchBtn">Search</button>
-         </div>
-         
-         <select name="" id="theme">
-         
+            <button id="sortBtn">Sort</button>
+        </div>
+        <select name="" id="theme">
             <option value="light">Light</option>
             <option value="Dark">Dark</option>
-         </select>
-
+        </select>
     </header>
 
     <section id="student-form">
-         <h1>Student Profile</h1>
+        <h1>Student Profile</h1>
         <form action="">
             <section id="inputField">
                 <label for="name">Name</label>
                 <input type="text" id="name" placeholder="Enter your name">
-    
                 <label for="age">Age</label>
                 <input type="number" id="age" placeholder="Enter your age">
-    
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="Enter your email">
             </section>
-            
-
             <select name="" id="course">
                 <option value="">Select course</option>
                 <option value="SDE">SDE</option>
                 <option value="data-scientist">Data Scientist</option>
                 <option value="cloud-computing">Cloud Computing</option>
-                <option value="forntend">Forentend Developer</option>
+                <option value="frontend">Frontend Developer</option>
             </select>
-             
             <p>Gender</p>
-            <section id="radios" >
+            <section id="radios">
                 <label for="male">Male</label>
-                <input type="radio" name="Male" id="male">
+                <input type="radio" name="gender" id="male" value="Male">
                 <label for="female">Female</label>
-                <input type="radio" name="Female" id="female" >
+                <input type="radio" name="gender" id="female" value="Female">
                 <label for="notToShow">Not Want to Show</label>
-                <input type="radio" name="Not want to show" id="notToShow" >
+                <input type="radio" name="gender" id="notToShow" value="Other">
             </section>
-             
-
-
-
             <p>Skills</p>
             <section id="checkboxes">
                 <label for="html">HTML</label>
                 <input type="checkbox" name="HTML" id="html">
                 <label for="css">CSS</label>
-                <input type="checkbox"  name="CSS" id="css">
+                <input type="checkbox" name="CSS" id="css">
                 <label for="js">JS</label>
                 <input type="checkbox" name="JS" id="js">
                 <label for="cloud">Cloud</label>
                 <input type="checkbox" name="Cloud" id="cloud">
-    
             </section>
-             <label for="profileImg">Upload Image</label>
-            <input type="text"  alt="" placeholder="Upload your image URL" id="profileImg">
-
+            <label for="profileImg">Upload Image</label>
+            <input type="text" id="profileImg" placeholder="Enter image URL">
+             
             <button id="submit">Submit</button>
         </form>
     </section>
 
-
-
     <section id="tableData">
         <h1>Student Profile Data</h1>
+        <button id="loadDataBtn">Load Data</button>
         <table border="1"> 
-             <thead>
-              <tr>
-                <td>Name</td>
-                <td>Age</td>
-                <td>Email</td>
-                <td>Course</td>
-                <td>Gender</td>
-                <td>Skills</td>
-                <td>Img</td>
-              </tr>
-             </thead>
-             <tbody>
-               
-             </tbody>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Age</td>
+                    <td>Email</td>
+                    <td>Course</td>
+                    <td>Gender</td>
+                    <td>Skills</td>
+                    <td>Img</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
         </table>
     </section>
-
+    <footer>
+        <p>&copy; 2023 Student Profile Dashboard</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
-<script src="script.js"></script>
